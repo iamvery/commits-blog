@@ -5,4 +5,8 @@ class Mug
     @color         = color
     @percent_empty = 100
   end
+
+  def filled?
+    percent_empty < 100
+  end
 end
