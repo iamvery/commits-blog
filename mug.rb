@@ -6,6 +6,10 @@ class Mug
     @percent_empty = 100
   end
 
+  def fill
+    @percent_empty = 0
+  end
+
   def filled?
     percent_empty < 100
   end
