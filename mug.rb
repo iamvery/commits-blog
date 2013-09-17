@@ -1,12 +1,13 @@
 class Mug
-  attr_reader :color, :percent_empty
+  attr_reader :color, :content, :percent_empty
 
   def initialize(color=:white)
     @color         = color
     @percent_empty = 100
   end
 
-  def fill
+  def fill(liquid=:coffee)
+    @content       = liquid
     @percent_empty = 0
   end
 
