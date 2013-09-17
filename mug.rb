@@ -20,6 +20,7 @@ class Mug
   end
 
   def sip
+    raise "You're all out of #{content}" if empty?
     @percent_empty += 1
   end
 end
