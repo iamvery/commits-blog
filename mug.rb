@@ -18,4 +18,8 @@ class Mug
   def empty?
     !filled?
   end
+
+  def sip
+    @percent_empty += 1
+  end
 end
