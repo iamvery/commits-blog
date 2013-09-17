@@ -9,4 +9,8 @@ class Mug
   def filled?
     percent_empty < 100
   end
+
+  def empty?
+    !filled?
+  end
 end
