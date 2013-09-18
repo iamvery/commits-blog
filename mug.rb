@@ -30,6 +30,7 @@ class Mug
   private
 
   def drink(percent)
+    raise "You're all out of #{content}" if empty?
     @percent_filled -= percent
   end
 end
