@@ -23,6 +23,10 @@ class Mug
     drink(1)
   end
 
+  def gulp
+    drink(10)
+  end
+
   private
 
   def drink(percent)
