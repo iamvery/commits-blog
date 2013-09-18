@@ -20,6 +20,12 @@ class Mug
   end
 
   def sip
+    drink(1)
+  end
+
+  private
+
+  def drink(percent)
     @percent_filled -= percent
   end
 end
